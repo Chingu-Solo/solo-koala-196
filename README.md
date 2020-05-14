@@ -6,7 +6,7 @@ The app displays simple, multiple-choice or T/F questions and returns a quiz sco
 
 ## Installation
 
-Chingu Trivia can be accessed online [here](https://https://evening-river-44968.herokuapp.com/).
+Chingu Trivia can be accessed online [here](https://evening-river-44968.herokuapp.com/).
 
 To run Chingu Trivia on your local machine, make sure you have node.js and some form of CLI installed. 
 
