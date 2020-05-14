@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Carrois+Gothic|Gothic+A1&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* header and headings */
+
+header {
+  width: 100vw;
+  display: flex;
+  align-items: baseline;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #0fa3b1;
+  height: 7.5vh;
+  
+  
+}
+
+header div{
+  width: 30vmax;
+  float: left;
+  margin-top: 1vh;
+ 
+}
+
+header div:nth-child(2){
+  width: 40vmax;
+}
+
+header div:nth-last-child(1){
+  text-align: center;
+}
+
+
+h1 {
+  margin-left: 2vw;
+  font-size: 5.8vmin;
+  -webkit-text-stroke-color: #0fa3b1;
+  -webkit-text-stroke-width: .22vmin;
+  -webkit-text-fill-color: #EDDEA4;
+  
+  
+}
+
+h2 {
+  text-align: center;
+  font-size: 4vmin;
+  letter-spacing: .3vmin;
+  -webkit-text-stroke-color: #0fa3b1;
+  -webkit-text-stroke-width: .22vmin;
+  -webkit-text-fill-color: #EDDEA4;
+}
+
+
+.init-message{
+  display: flex;
+  min-height: 60vmin;
+  flex-direction: column;
+  align-content: center;
+  
+}
+
+.init-message h4{
+  min-height: 30vmin;
+  text-justify: inter-word;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 4vmin;
+  font-family: 'Didact Gothic',sans-serif;
+  color: #0fa3b1;
+  font-weight: 300;
+  display: block;
+  box-sizing: border-box;
+  margin-top: 10vmin;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: fade-in;
+  animation-duration: 1700ms; 
+  
+}
+
+@keyframes fade-in{
+  0% {
+    color: #EDDEA4;
+    border-color: #EDDEA4;
+  }
+
+  100% {
+    color:#0fa3b1;
+    border-color: #0fa3b1;
+  }
+}
+
+.begin-quiz{
+  box-shadow: .5px .5px;
+  font-size: 3.8vmin;
+  color: #0fa3b1;
+  font-family: 'Didact Gothic', sans-serif;
+  cursor: pointer;
+  border: 1px solid #0fa3b1;
+  width: 20vmin;
+  display: block;
+  padding-top: .5vmax;
+  padding-bottom: .5vmax;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fade-in 1700ms;
+  
+}
+
+.begin-quiz:hover{
+  background-color:#c6def1;
+}
+
+
+
+
+#topics button {
+  padding-left: 1vmax;
+  padding-right: 1vmax;
+  color: #0fa3b1;
+  cursor: pointer;
+  animation: fade-in 1700ms;
+}
+
+@keyframes scaleButton {
+  0% {
+    transform: translateY(-0.5vh);
+  }
+  100% {
+    transform: translateY(-0.25vh)
+  }
+}
+
+#topics button.selected {
+  animation-name: scaleButton;
+  animation-duration: 200ms;
+  font-weight: 700;
+  
+}
+
+#topics span {
+  width: 100%;
+  display: block;
+  font-size: 1.4vmin;
+  margin-bottom: 1.2vmin;
+}
+
+#topics i {
+  transform: scale(.8,.8)
+}
+
+
+
+
+/* main content area */
+
+#wrapper {
+  height: 92.5vh;
+  padding-top: 10vh;
+  box-sizing: border-box;
+  animation: fade-in 1700ms;
+}
+
+#quiz {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vmax;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vmin;
+  border: 0.5px solid #0fa3b1;
+  animation: fade-in 1700ms;
+  
+}
+
+#quiz h3 {
+  display: block;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #0fa3b1;
+  font-size: 5vmin;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  line-height: 8vmin;
+    letter-spacing: .3vmin;
+    -webkit-text-stroke-color: #0fa3b1;
+    -webkit-text-stroke-width: .22vmin;
+    -webkit-text-fill-color: #EDDEA4;
+    animation: fade-in 1700ms;
+  
+}
+
+#filter-display {
+  text-align: center;
+  color: #0fa3b1;
+  margin-top: .5vh;
+  font-family: 'Didact Gothic', sans-serif;
+  animation: fade-in 1700ms;
+}
+
+.question-box {
+  display: flex;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4vmin;
+  text-align: center;
+  margin-top: 2vmin;
+  color: #0fa3b1;
+  font-family: 'Didact Gothic', sans-serif;
+  text-overflow: wrap;
+  animation: fade-in 1700ms;
+}
+
+#choices {
+  display: flex;
+  margin-top: 3vmax;
+  flex-direction: column;
+  align-items: center;
+  animation: fade-in 1700ms;
+
+}
+
+#choices button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vmax;
+  margin-bottom: 1vmax;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #0fa3b1;
+  min-height: 4vmax;
+  box-shadow: .5px .5px;
+  cursor: pointer;
+  color: #0fa3b1;
+  animation: fade-in 1700ms;
+}
+
+#choices button:hover{
+  background-color: #c6def1;
+  color: #0fa3b1;
+  animation: fade-in 1700ms;
+}
+
+button span {
+  margin: auto;
+  font-size: 1.4vmax;
+  animation: fade-in 1700ms;
+}
+
+.next-block{
+  margin-top: 4vmax;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30vmin;
+  text-align: center;
+  animation: fade-in 1700ms;
+}
+
+.next-block span {
+  display: block;
+  text-align: center;
+  font-size: 3vmin;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #0fa3b1;
+  animation: fade-in 1700ms;
+
+}
+
+.next-block button{
+  position: relative;
+  width: 20vmin;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vmax;
+  border: 1px solid #0fa3b1;
+  padding: 1.4vmin;
+  font-size: 2.4vmin;
+  color: #0fa3b1;
+  cursor: pointer;
+  box-shadow: .5px .5px;
+  animation: fade-in 1700ms;
+}
+
+.next-block button:hover{
+  background-color: #c6def1;
+  color: #0fa3b1;
+}
+
+.try-again {
+  font-size: 2.3vmax;
+  margin-bottom: 2vmax;
+  letter-spacing: .3vmin;
+    -webkit-text-stroke-color: #0fa3b1;
+    -webkit-text-stroke-width: .22vmin;
+    -webkit-text-fill-color: #EDDEA4;
+    cursor: pointer;
+    border: 1px solid #0fa3b1;
+    display: block;
+    width: 30%;
+    line-height: 8vmin;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fade-in 1700ms;
+}
+
+.try-again:hover{
+  background-color: #c6def1;
+  color: #0fa3b1;
+}
+
+
+
+
